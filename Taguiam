@@ -1,0 +1,30 @@
+x = []
+for j in range(100):
+
+    print ( """
+    >>>>>>>>>>   MENU   <<<<<<<<<<
+    
+        1 - Add Bookmark
+        2 - Edit Bookmark
+        3 - Delete Bookmark
+        4 - View Bookmark
+""")
+
+    answer = int(input("Choices:"))
+
+    if answer is 1:
+        choice = int(input("Input how many bookmarks:"))
+
+        for y in range(choice):
+            asd = str(input("Bookmark:"))
+            x.append(asd)
+    if answer is 2:
+        x_eb = input("To be Edit:")
+        dex = x.index(x_eb)
+        x.remove(x_eb)
+        x_eb1 = input("New Bookmark:")
+        x.insert(dex, x_eb1)
+            
+            
+    elif answer is 4:
+        print(x)
